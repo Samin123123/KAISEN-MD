@@ -5,11 +5,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "KAISEN~To42kS5I#R6cf0XymWFqDEfpSp9X7Jo-SlKkUHkqfQg7A2R7zZgc",
+SESSION_ID: process.env.SESSION_ID || "KAISEN~mlxGXKib#exkbx1aonqQKjmmPzLLxQal6ILgGk2HZl7BwogqHjnk",
 // add your Session Id 
-AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "false",
+AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
-AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
+AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS JUST NOW KAISEN 👻*",
 // set the auto reply massage on status reply  
@@ -29,7 +29,7 @@ OWNER_NUMBER: process.env.OWNER_NUMBER || "917003816486",
 // add your bot owner number
 OWNER_NAME: process.env.OWNER_NAME || "KAISEN",
 // add bot owner name 
-ADMIN_STATUS: process.env.ADMIN_STATUS || "false",
+ADMIN_STATUS: process.env.ADMIN_STATUS || "true",
 // make true to know who dismiss or promoted a member in group
 ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
 // maks true for always online 
@@ -43,7 +43,7 @@ LIVE_MSG: process.env.LIVE_MSG || "> HEY 👋 IM ALIVE NOW*⚡",
 // add alive msg here 
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
-AUTO_REACT: process.env.AUTO_REACT || "false",
+AUTO_REACT: process.env.AUTO_REACT || "true",
 // make this true or false for auto react on all msgs
 ANTI_BAD_WORD: process.env.ANTI_BAD_WORD || "true",
 // false or true for anti bad words  
