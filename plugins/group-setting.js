@@ -361,17 +361,17 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
         if (totalMembers === 0) return reply("❌ No members found in this group.");
 
         let emojis = ['⚡', '✨', '🎖️', '💎', '🔱', '💗',  '❤‍🩹', '👻', '🌟', '🪄', '🎋', '🪼', '🍿', '👀', '👑', '🦋', '🐋', '🌻', '🌸', '🔥', '🍉', '🍧', '🍨', '🍦', '🧃', '🪀', '🎾', '🪇', '🎲', '🎡', '🧸', '🎀', '🎈', '🩵', '♥️', '🚩' , '🏳️‍🌈', '🔪', '🎏', '🫐', '🍓', '🍇', '🐍', '🪻', '🪸', '💀'];
-        let randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-
+   //     let randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        const getEmoji = () => emojis[Math.floor(Math.random() * emojis.length)];
         // Proper message extraction
         let message = body.slice(body.indexOf(command) + command.length).trim();
         if (!message) message = "ATTENTION EVERYONE"; // Default message
 
         let teks = `*▢ GROUP : ${groupName}*\n*▢ MEMBERS : ${totalMembers}*\n*▢ MESSAGE : ${message}*\n\n*╭┈─「 \`ɦเ αℓℓ ƒɾเεɳ∂ร 🥰\` 」┈❍*\n`;
 
-        for (let mem of participants) {
+        for (const mem of participants) {
             if (!mem.id) continue; // Prevent undefined errors
-            teks += `*│${randomEmoji} ᩧ𝆺ྀི𝅥* @${mem.id.split('@')[0]}\n`;
+            teks += `*│${getEmoji()} ᩧ𝆺ྀི𝅥* @${mem.id.split('@')[0]}\n`;
 	}
 
         conn.sendMessage(from, { text: teks, mentions: participants.map(a => a.id) }, { quoted: mek });
