@@ -5,11 +5,11 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "KAISEN~61Ji3JiR#xlBCyTmzosis-HByh-xkXmm4aj7Lngd2DabEN6r0BSk",
+SESSION_ID: process.env.SESSION_ID || "KAISEN~SpACXQTY#jkGchpCKcuqM9mC7ArYpKLpvXYYgBigdYFRXR05AWwU",
 // add your Session Id 
-AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "flase",
+AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
-AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "flase",
+AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "trur",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS JUST NOW 👻*",
 // set the auto reply massage on status reply  
@@ -33,7 +33,7 @@ ADMIN_STATUS: process.env.ADMIN_STATUS || "true",
 // make true to know who dismiss or promoted a member in group
 ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
 // maks true for always online 
-MENTION_REPLY: process.env.MENTION_REPLY || "false",
+MENTION_REPLY: process.env.MENTION_REPLY || "true",
 // maks true for always online 
 DESCRIPTION: process.env.DESCRIPTION || "*© ᴘσωєʀє∂ ву 𝖐𝚊𝚒𝚜𝖊𝖓 𝙼ԃ⎯꯭̽💀*",
 // add bot owner name    
